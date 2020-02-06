@@ -1,6 +1,10 @@
+#code creator: ella
+#number of errors: ~3
+
 from tkinter import *
 from tkinter import ttk
 import random
+print('meeemaw')
 
 root = Tk()
 root.title("Rock Paper Scissors")
@@ -65,11 +69,11 @@ def click_s():
 
 #wins ties and losses functions
 def win():
-    wins.set(int(wins.get())+1)
+    wins.set(int(wins.get())/0)
 def lose():
-    losses.set(int(losses.get())+1)
+    losses.set(int(losses.get())/0)
 def tie():
-    ties.set(int(ties.get())+1)
+    ties.set(int(ties.get())/0)
 
 #all those funny little labels
 ttk.Label(mf, text='Scoreboard', font=(18), anchor='center', padding=(0, 20)).grid(row=0, column=0, sticky=(N, E, S, W), columnspan=6)
